@@ -28,9 +28,12 @@ body {
 
  div.nav a{
     padding: 10px;
-    font-size: large;
-    display: block;
-    
+    font-size: 15px;
+    display: block;  
+ }
+
+ div.nav a:hover{
+    background-color:yellow;
  }
   
  h2 {
@@ -62,24 +65,34 @@ body {
  
  div.nav:before { 
    content: "Navigation ";
-   font-size : 30px;
+   font-size : 20px;
    font-weight : bold;
    margin-left: 0px;
  }
  
 
 @media screen and (max-width: 500px) {
-    #navigation a{
-    float: none;
-    }
-    #page{
-        width: 350px;
-        height: 900px;
-        padding: 0px;
-        margin: 0px;
-        border: 5px solid #3399cc;
-    }
-    .main-image{
-        margin-left: 0px;
-    }
+    div.nav {
+        z-index : 1;
+        position : absolute;
+        top : 80px; left : 0px;
+        width : 100px;
+        height : 100%;
+        padding : 20px;
+        background-color : #d6d6d6;
+      }
+    p.abstract{
+        font-weight : bold;
+        margin-left: 20px;
+      }
+    h2 {
+        padding : 80px 0px 0px 130px;
+        margin-left: 20px;
+      }
+    ul {
+        clear : left;
+        margin-left: 20px; 
+        list-style : circle;
+        padding-left : 145px;
+      }  
 }
