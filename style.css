@@ -44,17 +44,18 @@ body {
  p {
    padding-left : 115px;
  }
- p.abstract{
+
+p.abstract{
    font-weight : bold;
    margin-left: 95px;
  }
  
- img {
+img {
    float : left;
    margin-left: 150px; 
    width : 60px;
    padding-right : 5px;
- }
+}
  
  ul {
    clear : left;
